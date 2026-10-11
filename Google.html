@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google - New Tab</title>
+<style>
+*{margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+body{background:#fff; height:100vh; display:flex; flex-direction:column;}
+/* Top Bar */
+.top-bar{
+  display:flex; align-items:center; padding:10px; background:#d0e8ff;
+  border-bottom:1px solid #dadce0;
+}
+.tab{
+  background:#fff; padding:8px 20px; border-radius:10px 10px 0 0; font-size:14px;
+  display:flex; align-items:center; gap:10px; width:200px;
+}
+.url-bar{
+  flex:1; background:#fff; margin-left:10px; border:2px solid #1a73e8;
+  border-radius:25px; height:38px; display:flex; align-items:center; padding:0 15px;
+}
+.url-bar input{border:none; outline:none; flex:1; font-size:16px;}
+.ai-btn{ background:#dbe9ff; padding:6px 12px; border-radius:20px; font-size:13px; color:#1a73e8; font-weight:bold;}
+
+/* Center Content */
+.center{
+  flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center;
+  margin-top:-80px;
+}
+.logo{
+  font-size:90px; font-weight:400; letter-spacing:-5px; margin-bottom:35px;
+}
+.logo span:nth-child(1){color:#4285F4;}
+.logo span:nth-child(2){color:#EA4335;}
+.logo span:nth-child(3){color:#FBBC05;}
+.logo span:nth-child(4){color:#4285F4;}
+.logo span:nth-child(5){color:#34A853;}
+.logo span:nth-child(6){color:#EA4335;}
+
+/* Search Box */
+.search-box{
+  width:650px; max-width:90%;
+  border:1px solid #dfe1e5; border-radius:30px;
+  display:flex; align-items:center; padding:12px 20px;
+  box-shadow:0 1px 6px rgba(32,33,36,0.1);
+}
+.search-box:hover{box-shadow:0 2px 8px rgba(32,33,36,0.2);}
+.search-box input{
+  flex:1; border:none; outline:none; font-size:18px; margin-left:10px; color:#5f6368;
+}
+.icon{font-size:20px; color:#5f6368; margin-left:15px; cursor:pointer;}
+.ai-mode{
+  margin-left:15px; background:#f1f3f4; padding:6px 12px; border-radius:20px; font-size:14px; display:flex; align-items:center; gap:5px;
+}
+.options{
+  display:flex; gap:30px; margin-top:20px;
+}
+.opt{
+  background:#f8f9fa; padding:10px 15px; border-radius:10px; font-size:13px; line-height:18px; color:#4d5156;
+}
+.opt b{color:#202124;}
+
+.shortcuts{
+  display:flex; gap:40px; margin-top:50px;
+}
+.short{ text-align:center; font-size:13px; color:#4d5156;}
+.plus{width:35px; height:35px; background:#f1f3f4; border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:20px; margin-bottom:8px;}
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+  <div class="tab">🌐 New tab &nbsp; &nbsp; x</div>
+  <div style="margin-left:10px; font-size:20px;">+</div>
+  <div class="url-bar">
+    <span style="color:#4285F4; font-weight:bold; font-size:20px;">G</span>
+    <input type="text">
+    <div class="ai-btn">✨ AI Mode</div>
+  </div>
+</div>
+
+<div class="center">
+  <div class="logo"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></div>
+
+  <div class="search-box">
+    <span>＋</span>
+    <input type="text" placeholder="Ask Google">
+    <span class="icon">🎤</span>
+    <span class="icon">📷</span>
+    <div class="ai-mode">✨ AI Mode</div>
+  </div>
+
+  <div class="options">
+    <div class="opt">🔍 <b>Do more with AI Mode</b><br>Create, plan, summarise</div>
+    <div class="opt"><b>Create images</b><br>Add an image and reimagine it</div>
+  </div>
+
+  <div class="shortcuts">
+    <div class="short"><div class="plus">🌈</div>Web Store</div>
+    <div class="short"><div class="plus">＋</div>Add shortcut</div>
+  </div>
+</div>
+
+</body>
+</html>

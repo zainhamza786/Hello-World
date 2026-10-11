@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS GRID & FLEXBOX</title>
+
+<body>
+
+<div class="main-wrapper">
+  <div class="grid-container">
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+    <div class="box b3"></div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+    <div class="box b6"></div>
+    <div class="box b7"></div>
+    <div class="box b8"></div>
+    <div class="box b9"></div>
+  </div>
+
+  <div class="text-area">
+    <h1><span>CSS GRID</span><span>&</span><span>FLEXBOX</span></h1>
+    <p>A Brief Juxtaposition</p>
+  </div>
+</div>
+</body>
+</html>
+
+<style>
+  body {
+    background: #2b1654;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .main-wrapper {
+    width: 650px;
+    filter: drop-shadow(0 15px 15px rgba(0,0,0,0.4));
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 115px);
+    gap: 10px;
+    background: #2b1654;
+    border-radius: 0 0 35px 35px;
+    overflow: hidden;
+    padding: 0;
+  }
+  .box {
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.2), 5px 5px 15px rgba(0,0,0,0.3);
+  }
+  /* Teal / Green Boxes */
+  .b1 { grid-column: 1 / 2; grid-row: 1 / 2; background: linear-gradient(135deg, #3bb5b5, #2a9aa0); }
+  .b2 { grid-column: 2 / 4; grid-row: 1 / 2; background: linear-gradient(135deg, #4fc4d6, #2fa8b8); }
+  .b3 { grid-column: 1 / 3; grid-row: 2 / 3; background: linear-gradient(135deg, #4bc3b0, #2fa89a); }
+  .b4 { grid-column: 3 / 4; grid-row: 2 / 4; background: linear-gradient(135deg, #4fc4d6, #2fa8b8); }
+  .b5 { grid-column: 1 / 2; grid-row: 3 / 4; background: linear-gradient(135deg, #4bc3a0, #2fa898); border-radius: 0 0 0 35px; }
+  .b6 { grid-column: 2 / 3; grid-row: 3 / 4; background: linear-gradient(135deg, #4bc3b0, #2fa89a); }
+
+  /* Pink Boxes */
+  .b7 { grid-column: 4 / 5; grid-row: 1 / 4; background: linear-gradient(180deg, #d68cb8, #c98bb5); }
+  .b8 { grid-column: 5 / 6; grid-row: 1 / 4; background: linear-gradient(180deg, #d89bb8, #d0a0b8); }
+  .b9 { grid-column: 6 / 7; grid-row: 1 / 4; background: linear-gradient(180deg, #e0a8a8, #e8b8a5); border-radius: 0 0 35px 0; }
+
+  .text-area {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .text-area h1 {
+    margin: 0;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 1px;
+  }
+  .text-area h1 span:first-child {
+    color: #4de8d0;
+  }
+  .text-area h1 span:nth-child(2) {
+    color: #8a4de8;
+    margin: 0 10px;
+  }
+  .text-area h1 span:last-child {
+    color: #ffb5d0;
+  }
+  .text-area p {
+    color: #c86eff;
+    font-size: 20px;
+    margin-top: 5px;
+    letter-spacing: 1px;
+  }
+</style>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Washroom Designs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <nav>
+  <ul>
+    <li>BATHROOMS</li>
+    <li>RENOVATIONS</li>
+    <li>PORTFOLIO</li>
+  </ul>
+  <div class="logo">ONYX <span>BATHROOMS</span></div>
+  <ul style="align-items:center;">
+    <li>PROCESS</li>
+    <li>STUDIO</li>
+    <li><button class="btn-gold">BOOK A CONSULTATION</button></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-content">
+    <h5>CHICAGO - BATHROOM DESIGN AND RENOVATION PLUMBING</h5>
+    <h1>The room you stand in first thing, done properly once.</h1>
+    <p>Design, first fix, second fix and the trades in between, run by one studio so nobody hands the problem to somebody else.</p>
+    <button class="btn-gold">BOOK A CONSULTATION</button>
+  </div>
+</section>
+
+<div  class="cookie-bar">
+  <span>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</span>
+  <div>
+    <button>Decline</button>
+    <button class="accept">Accept All</button>
+  </div>
+</div>
+
+<section class="rooms">
+  <h2>Three rooms</h2>
+  <p class="sub">Sample projects for template demonstration. Add one YAML file per project in src/content/portfolio/.</p>
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600" alt="room1">
+    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=600" alt="room2">
+    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=600" alt="room3">
+  </div>
+</section>
+</body>
+</html>
+
+<style>
+*{margin:0; padding:0; box-sizing:border-box;}
+body{font-family:'Inter', sans-serif; background:#000; color:#fff;}
+/* NAVBAR */
+nav{
+  position:absolute; top:0; left:0; width:100%; z-index:10;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:18px 40px; border-bottom:1px solid rgba(255,255,255,0.15);
+}
+nav ul{list-style:none; display:flex; gap:20px;}
+nav ul li{font-size:10px; letter-spacing:1.5px; color:#ccc; cursor:pointer;}
+.logo{font-family:'Playfair Display', serif; letter-spacing:4px; font-size:14px; font-weight:600;}
+.logo span{font-size:8px; display:block; letter-spacing:3px; font-weight:300; opacity:0.7;}
+.btn-gold{
+  border:1px solid #c5a253; color:#c5a253; background:transparent;
+  padding:7px 14px; font-size:9px; letter-spacing:1px; cursor:pointer;
+}
+.btn-gold:hover{background:#c5a253; color:#000;}
+/* HERO */
+.hero{
+  height:100vh; width:100%;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=1000') center/cover no-repeat;
+  display:flex; align-items:center; padding:0 50px;
+}
+.hero-content{max-width:450px; margin-top:50px;}
+.hero-content h5{color:#c5a253; font-size:8px; letter-spacing:2px; margin-bottom:15px; font-weight:400;}
+.hero-content h1{font-family:'Playfair Display', serif; font-size:38px; line-height:42px; font-weight:400; margin-bottom:15px;}
+.hero-content p{font-size:11px; line-height:16px; color:#bbb; font-weight:300; margin-bottom:20px;}
+/* COOKIE BAR */
+.cookie-bar{
+  background:#0a1020; color:#888; font-size:9px; padding:10px 30px;
+  display:flex; justify-content:space-between; align-items:center;
+}
+.cookie-bar div button{font-size:9px; padding:5px 10px; border-radius:4px; border:1px solid #444; background:transparent; color:#fff; margin-left:8px; cursor:pointer;}
+.cookie-bar .accept{background:#c5a253; color:#000; border:none;}
+/* THREE ROOMS */
+.rooms{background:#080808; padding:30px;}
+.rooms h2{font-family:'Playfair Display', serif; font-weight:400; font-size:22px; margin-bottom:5px;}
+.rooms .sub{font-size:10px; color:#666; margin-bottom:20px;}
+.grid{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;
+}
+.grid img{width:100%; height:320px; object-fit:cover; display:block;}
+@media(max-width:768px){
+  nav{padding:12px 15px;} nav ul{display:none;}
+  .hero{padding:0 20px;} .hero-content h1{font-size:28px; line-height:32px;}
+  .grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+
